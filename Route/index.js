@@ -1,10 +1,10 @@
 module.exports = (app) => {
 
-    const addLike = require("./addLike");
+    const addLike = require("./Like");
 
     app.all("/", (req, res) => {
         res.send("OK");
     });
 
-    app.use("/add-like", addLike);
+    app.use("/like", addLike);
 };
